@@ -114,6 +114,7 @@ const Login = () => {
         <p className="text-center cursor-pointer" onClick={toggleSignInForm}>
           {isSignIn ? "New to Xtreamify? Sign Up Now" : "Already Registered? Sign In"}
         </p>
+        <p className="text-red-600 font-bold">Disclaimer: Please use Airtel connection for proceeding forward or use VPN!!!</p>
       </div>
     </div>
   );
