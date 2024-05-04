@@ -54,12 +54,12 @@ const Header = () => {
   }
 
   return (
-    <div className="w-full bg-gradient-to-r from-cyan-50 to-blue-500 flex justify-between items-center p-4 absolute  top-0 z-10">
+    <div className="w-full bg-gradient-to-r from-cyan-50 to-blue-500 flex justify-between flex-col md:flex-row items-center p-4 absolute  top-0 z-10">
       <img className="w-20" alt="main-logo" src={logo} />
-      <div className="flex">
+      <div className="flex mt-4 md:mt-0">
       {login && (
           <div className="flex items-center mr-2">
-            <button className="w-36 font-bold  text-xl px-2 rounded-lg bg-black text-blue-400 h-9" onClick={handleGptSearch}>{showGptSearch?"HOME":"GPT SEARCH"}</button>
+            <button className="w-20 md:w-36 font-bold text-xs  md:text-xl px-2 rounded-lg bg-black text-blue-400 h-9" onClick={handleGptSearch}>{showGptSearch?"HOME":"GPT SEARCH"}</button>
           </div>
         )}
         {login && (
