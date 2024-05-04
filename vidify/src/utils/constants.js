@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = "AIzaSyAhoZN1LwRy49FnsP4dRvE_EijbGKLeyf0";
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_KEY;
 export const YOUTUBE_API_KEY =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
   GOOGLE_API_KEY;
