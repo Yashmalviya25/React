@@ -3,7 +3,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5M2E1Mzg4ZGYwMjUwNDA5Y2EwYWI4M2NlYWEzNWFkZiIsInN1YiI6IjY2MzRjYWY5MGY1MjY1MDEyYmJhZGE2NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kPfKub26p6jygvjQMDFHPmindaxSiEzm2gZ6vXmuMAg",
+      "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -18,3 +18,5 @@ export const GET_MOVIE_TRAILER =
 export const IMAGE_CDN_URL = "https://image.tmdb.org/t/p/w500";
 
 export const SUPPORTED_LANGUAGES = [{identifier:"en",name:"English"},{identifier:"hindi",name:"Hindi"},{identifier:"spanish",name:"Spanish"}]
+
+export const OPEN_AI_KEY = process.env.REACT_APP_OPEN_AI_KEY;
